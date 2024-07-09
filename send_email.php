@@ -1,31 +1,20 @@
 <?php
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $user_email = $_POST['email'];
-    $message = $_POST['message'];
+    $name = htmlspecialchars($_POST['name']);
+    $email = htmlspecialchars($_POST['email']);
+    $message = htmlspecialchars($_POST['message']);
 
-    // 이메일 수신자 주소
-    $to = $user_email; // 사용자의 이메일 주소로 설정
+    $to = 'hyeongjun967329@gmail.com'; // 받는 이메일 주소를 입력하세요
+    $subject = 'New Contact Form Submission';
+    $body = "Name: $name\nEmail: $email\nMessage: $message";
+    $headers = "From: $email";
 
-    // 이메일 제목
-    $subject = 'Your Contact Form Submission';
-
-    // 이메일 본문
-    $body = "Thank you for contacting us. Here is a copy of your message:\n\n".
-            "Your Email: $user_email\n\n".
-            "Your Message:\n$message";
-
-    // 이메일 헤더
-    $headers = "From: hyeongjun967329@gmail.com\r\n" .  // 여기에 보낸 사람의 이메일 주소를 입력하세요
-               "Reply-To: no-reply@example.com\r\n" .
-               "X-Mailer: PHP/" . phpversion();
-
-    // 이메일 보내기
     if (mail($to, $subject, $body, $headers)) {
-        echo 'Message sent successfully';
+        echo "Email successfully sent!";
     } else {
-        echo 'Error: Unable to send message';
+        echo "Failed to send email.";
     }
 } else {
-    echo 'Invalid request method';
+    echo "Invalid request method.";
 }
 ?>
