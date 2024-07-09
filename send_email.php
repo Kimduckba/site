@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             "Here is the message:\n$message";
 
     // 이메일 헤더
-    $headers = "From: webmaster@example.com\r\n" .  // 여기에 보낸 사람의 이메일 주소를 입력하세요
+    $headers = "From: hyeongjun967329@gmail.com\r\n" .  // 여기에 보낸 사람의 이메일 주소를 입력하세요
                "Reply-To: $email\r\n" .
                "X-Mailer: PHP/" . phpversion();
 
