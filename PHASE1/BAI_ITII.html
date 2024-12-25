@@ -3,18 +3,75 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BusinessAI 개론 및 IT 산업 혁신</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>책 소개</title>
+    <style>
+        /* 기본 스타일 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        /* 책 컨테이너 */
+        .book-container {
+            display: flex;            /* flexbox 사용 */
+            justify-content: space-between;  /* 책들 사이 간격을 균등하게 */
+            gap: 20px;                /* 책들 사이 간격 */
+            width: 80%;               /* 부모 컨테이너 너비를 적당히 설정 */
+        }
+
+        /* 각 책 카드 */
+        .book {
+            background-color: #fff;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 45%;  /* 각 책의 너비를 부모 너비의 45%로 설정 */
+        }
+
+        /* 제목 스타일 */
+        .book h2 {
+            font-size: 1.5rem;
+            color: #333;
+            margin-bottom: 10px;
+        }
+
+        /* 책 소개 텍스트 스타일 */
+        .book-description {
+            font-size: 1rem;
+            color: #666;
+        }
+    </style>
 </head>
 <body>
-    <header class="header">
-        <h1>BusinessAI 개론 및 IT 산업 혁신</h1>
-        <p>안녕하세요..</p>
-    </header>
 
+    <div class="book-container">
+        <div class="book">
+            <h2>AI INSIGHTS FOR BUSINESS STRATEGY</h2>
+            <img src="A.png" alt="책 1 이미지" class="book-image" width="150" height="200">
+            <p class="book-description"> <br>
+                내용이 뭐였더라..?
+            </p>
+        </div>
 
-    <footer class="footer">
-        <p>&copy; 2024 BusinessAI 교육 과정 | <a href="contact.html">문의하기</a> | <a href="privacy.html">개인정보 처리방침</a></p>
-    </footer>
+        <div class="book">
+            <h2>IT 혁신과 e비지니스 <br> e비지니스1</h2>
+            <img src="B.png" alt="책 2 이미지" class="book-image" width="150" height="200">
+            <p class="book-description"><br>
+                내용이 뭐였더라..?
+            </p>
+        </div>
+    </div>
+
 </body>
 </html>
