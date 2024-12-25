@@ -9,7 +9,10 @@ site
 <br> &nbsp;&nbsp; ㄴ style.css 
 <br> &nbsp;&nbsp; ㄴ java.js 
 <br> 
-<br> &nbsp;&nbsp; ㄴ WR_WeekX.html (주간회고)
+<br> &nbsp;&nbsp; WR (주간회고 폴더)
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ㄴ WR_WeekX.html 
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ㄴ style.css 
+<br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ㄴ java.js 
 <br> 
 <br> &nbsp;&nbsp; ㄴ PHASE1
 <br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; ㄴ BAI_ITII.html (BusinessAI 개론 및 IT 산업 혁신)
