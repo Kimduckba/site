@@ -1,0 +1,229 @@
+/* 데스크탑 화면 */
+@media (min-width: 1024px) {
+  body {
+      background-color: lightblue;
+  }
+}
+
+/* 모바일 화면에 맞게 레이아웃 수정 */
+@media screen and (max-width: 768px) {
+  .container {
+      padding: 10px;
+  }
+
+  .header {
+      text-align: center; /* 헤더 가운데 정렬 */
+  }
+
+  .menu {
+      display: flex;
+      flex-direction: column; /* 메뉴 버튼을 세로로 나열 */
+      align-items: center;
+  }
+
+  .menu-item {
+      margin: 10px 0;
+  }
+
+  .rectangle1, .rectangle2, .rectangle3 {
+      width: 100%; /* 사각형 요소가 모바일 화면에 맞게 확장 */
+      margin-bottom: 10px;
+  }
+
+  .text1 {
+      font-size: 14px; /* 텍스트 크기 조정 */
+  }
+}
+
+
+/* 전체 바디 스타일 */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff12;
+  color: #333;
+  margin: 0;
+  padding: 0;
+}
+
+/* 컨테이너 스타일 */
+.container {
+  max-width: 1200px;
+  margin: 2em auto;
+  padding: 2em;
+  background: #ffffff12;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+/* 제목과 부제목 설정 */
+.header {
+  text-align: left;
+  margin-bottom: 2em;
+}
+.logo {
+  max-width: 150px;
+  margin-bottom: -1em;
+  width: 100px;
+  height: 50px;
+  object-fit: cover;
+}
+.title {
+  font-size: 2em;
+  font-weight: bold;
+  margin-bottom: 0.2em;
+}
+.subtitle {
+  font-size: 1.5em;
+  color: #666;
+}
+
+/* 소개 부분 스타일 */
+.introduction {
+  margin: 2em 0;
+  text-align: left;
+}
+.introduction p {
+  font-size: 1.2em;
+  color: #555;
+}
+
+/* 메뉴 스타일 */
+.menu {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 2em;
+}
+.menu-item {
+  margin: 1em;
+  flex: 1 1 200px; /* 각 메뉴 항목이 적당히 크기를 조정 */
+}
+.menu-item a button {
+  font-size: 1.2em;
+  padding: 0.7em 2em;
+  cursor: pointer;
+  background-color: #f7f7f7;
+  color: rgb(12, 12, 12);
+  border: none;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.menu-item a button:hover {
+  background-color: #0056b3;
+  transform: translateY(-2px);
+}
+
+/* 푸터 스타일 */
+.footer {
+  text-align: center;
+  margin-top: 2em;
+  font-size: 0.9em;
+  color: #999;
+}
+
+
+.text1 {
+  text-align: center;      /* 가로 중앙 정렬 */
+  height: 55px;    
+  color: #f7f7f7; 
+  font-size: 20px;       
+}
+
+.text1_1 {
+  text-align: center;      /* 가로 중앙 정렬 */
+  height: 55px;    
+  color: #040404; 
+  font-size: 20px;       
+}
+
+
+.rectangle1 {
+  position: absolute;         /* 절대 위치 */
+  top: 180px;                  /* 상위 요소(브라우저) 상단에서 50px 떨어짐 */
+  left: 60px;                 /* 상위 요소(브라우저) 왼쪽에서 20px 떨어짐 */
+
+  width: 300px;               /* 너비 */
+  height: 50px;              /* 높이 */
+  background-color: #0362a2;  /* 배경색 (파란색) */
+  /* border: 2px solid #2980b9;  테두리 색상 */
+}
+
+.rectangle1_1 {
+  position: absolute;         /* 절대 위치 */
+  top: 230px;                  /* 상위 요소(브라우저) 상단에서 50px 떨어짐 */
+  left: 60px;                 /* 상위 요소(브라우저) 왼쪽에서 20px 떨어짐 */
+
+  width: 300px;               /* 너비 */
+  height: 300px;              /* 높이 */
+  background-color: #9ecbe813;  /* 배경색 (파란색) */
+  /* border: 2px solid #2980b9;  테두리 색상 */
+}
+
+.rectangle2 {
+  position: absolute;         /* 절대 위치 */
+  top: 180px;                  /* 상위 요소(브라우저) 상단에서 50px 떨어짐 */
+  left: 380px;                 /* 상위 요소(브라우저) 왼쪽에서 20px 떨어짐 */
+
+  width: 200px;               /* 너비 */
+  height: 50px;              /* 높이 */
+  background-color: #a60cb0;  /* 배경색 (파란색) */
+  /* border: 2px solid #2980b9;  테두리 색상 */
+}
+
+.rectangle2_1 {
+  position: absolute;         /* 절대 위치 */
+  top: 230px;                  /* 상위 요소(브라우저) 상단에서 50px 떨어짐 */
+  left: 380px;                 /* 상위 요소(브라우저) 왼쪽에서 20px 떨어짐 */
+
+  width: 200px;               /* 너비 */
+  height: 300px;              /* 높이 */
+  background-color: #edc8e313;  /* 배경색 (파란색) */
+  /* border: 2px solid #2980b9;  테두리 색상 */
+}
+
+.rectangle3 {
+  position: absolute;         /* 절대 위치 */
+  top: 180px;                  /* 상위 요소(브라우저) 상단에서 50px 떨어짐 */
+  left: 600px;                 /* 상위 요소(브라우저) 왼쪽에서 20px 떨어짐 */
+
+  width: 150px;               /* 너비 */
+  height: 50px;              /* 높이 */
+  background-color: #20007e;  /* 배경색 (파란색) */
+  /* border: 2px solid #2980b9;  테두리 색상 */
+}
+
+.rectangle3_1 {
+  position: absolute;         /* 절대 위치 */
+  top: 230px;                  /* 상위 요소(브라우저) 상단에서 50px 떨어짐 */
+  left: 600px;                 /* 상위 요소(브라우저) 왼쪽에서 20px 떨어짐 */
+
+  width: 150px;               /* 너비 */
+  height: 300px;              /* 높이 */
+  background-color:  #f5f4fa  /* 배경색 (파란색) */
+  /* border: 2px solid #2980b9;  테두리 색상 */
+}
+
+
+/* .size-12 클래스 정의 */
+.size-12 {
+  font-size: 12px;
+}
+
+/* .clickable 링크 스타일 */
+a.clickable {
+  text-decoration: none; /* 링크의 기본 밑줄 제거 */
+  color: inherit; /* 부모 색상 상속 */
+}
+
+a.clickable:hover {
+  color: #3498db; /* 호버 시 색상 변경 */
+}
+
+
+
