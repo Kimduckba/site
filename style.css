@@ -6,9 +6,12 @@
 }
 
 /* 모바일 화면에 맞게 레이아웃 수정 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 480px) {
   .container {
       padding: 10px;
+  }
+  .title {
+    font-size: 1.5em;
   }
 
   .header {
