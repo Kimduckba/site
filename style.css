@@ -20,7 +20,7 @@
 
   .menu {
       display: flex;
-      flex-direction: row; /* 메뉴 버튼을 세로로 나열 */
+      flex-direction: row; /* 메뉴 버튼을 가로로 나열 */
       align-items: center;
   }
 
@@ -220,6 +220,27 @@ body {
   /* border: 2px solid #2980b9;  테두리 색상 */
 }
 
+.rectangle_rectangle {
+  position: absolute;         /* 절대 위치 */
+  top: 180px;                  /* 상위 요소(브라우저) 상단에서 50px 떨어짐 */
+  left: 800px;                 /* 상위 요소(브라우저) 왼쪽에서 20px 떨어짐 */
+
+  width: 400px;               /* 너비 */
+  height: 350px;              /* 높이 */
+  background-color:  #c8c5d8  /* 배경색 (파란색) */
+  /* border: 2px solid #2980b9;  테두리 색상 */
+}
+
+.r {
+  position: absolute;         /* 절대 위치 */
+  top: 180px;                  /* 상위 요소(브라우저) 상단에서 50px 떨어짐 */
+  left: 1300px;                 /* 상위 요소(브라우저) 왼쪽에서 20px 떨어짐 */
+
+  width: 10px;               /* 너비 */
+  height: 350px;              /* 높이 */
+  background-color:  #ffffff  /* 배경색 (파란색) */
+  /* border: 2px solid #2980b9;  테두리 색상 */
+}
 
 /* .size-12 클래스 정의 */
 .size-12 {
