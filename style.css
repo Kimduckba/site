@@ -17,24 +17,37 @@
 
   .menu {
       display: flex;
-      flex-direction: column; /* 메뉴 버튼을 세로로 나열 */
+      flex-direction: row; /* 메뉴 버튼을 세로로 나열 */
       align-items: center;
   }
 
   .menu-item {
-      margin: 10px 0;
+      margin: 5px 0;
   }
 
   .rectangle1, .rectangle2, .rectangle3 {
-      width: 100%; /* 사각형 요소가 모바일 화면에 맞게 확장 */
+      width: 50%; /* 사각형 요소가 모바일 화면에 맞게 확장 */
       margin-bottom: 10px;
   }
 
   .text1 {
-      font-size: 14px; /* 텍스트 크기 조정 */
+      font-size: 8px; /* 텍스트 크기 조정 */
   }
 }
 
+/* 화면이 768px 이하일 때 (태블릿 및 모바일) */
+@media (max-width: 768px) {
+  body {
+    font-size: auto; /* 모바일에서 폰트 크기 줄이기 */
+  }
+}
+
+/* 화면이 480px 이하일 때 (모바일) */
+@media (max-width: 480px) {
+  body {
+    font-size: auto; /* 더 작은 폰트 크기 */
+  }
+}
 
 /* 전체 바디 스타일 */
 body {
@@ -47,7 +60,7 @@ body {
 
 /* 컨테이너 스타일 */
 .container {
-  max-width: 1200px;
+  max-width: auto;
   margin: 2em auto;
   padding: 2em;
   background: #ffffff12;
@@ -96,7 +109,7 @@ body {
 }
 .menu-item {
   margin: 1em;
-  flex: 1 1 200px; /* 각 메뉴 항목이 적당히 크기를 조정 */
+  flex: 1 1 auto; /* 각 메뉴 항목이 적당히 크기를 조정 */
 }
 .menu-item a button {
   font-size: 1.2em;
@@ -108,14 +121,9 @@ body {
   transition: background-color 0.3s, transform 0.3s;
 }
 
-.menu {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
 .menu-item a button:hover {
-  background-color: #0056b3;
+  background-color: #000000;
+  color: rgb(255, 255, 255);
   transform: translateY(-2px);
 }
 
