@@ -1,108 +1,118 @@
-/* 데스크탑 화면 */
-@media (min-width: 1024px) {
-  body {
-      background-color: lightblue;
-  }
-}
-
-/* 모바일 화면에 맞게 레이아웃 수정 */
-@media screen and (max-width: 480px) {
-  .container {
-      padding: 10px;
-  }
-  .title {
-    font-size: 1.5em;
-  }
-
-  .header {
-      text-align: center; /* 헤더 가운데 정렬 */
-  }
-
-  .menu {
-      display: flex;
-      flex-direction: row; /* 메뉴 버튼을 가로로 나열 */
-      align-items: center;
-  }
-
-  .menu-item {
-      margin: 5px 0;
-  }
-
-  .rectangle1, .rectangle2, .rectangle3 {
-      width: 50%; /* 사각형 요소가 모바일 화면에 맞게 확장 */
-      margin-bottom: 10px;
-  }
-
-  .text1 {
-      font-size: 8px; /* 텍스트 크기 조정 */
-  }
-}
-
-/* 화면이 768px 이하일 때 (태블릿 및 모바일) */
-@media (max-width: 768px) {
-  body {
-    font-size: auto; /* 모바일에서 폰트 크기 줄이기 */
-  }
-}
-
-/* 화면이 480px 이하일 때 (모바일) */
-@media (max-width: 480px) {
-  body {
-    font-size: auto; /* 더 작은 폰트 크기 */
-  }
-}
-
 /* 전체 바디 스타일 */
 body {
   font-family: Arial, sans-serif;
-  background-color: #ffffff12;
-  color: #333;
+  background-color:  #ffffff; /* web 자체의 색상 */
+  color: #333;  /* body에서 사용되는 글씨체 색상 */
   margin: 0;
   padding: 0;
 }
-
 /* 컨테이너 스타일 */
 .container {
-  max-width: auto;
-  margin: 2em auto;
+  margin: 2em;
   padding: 2em;
-  background: #ffffff12;
-  border-radius: 10px;
+  background: #ffffff;
+  border-radius: 0px;
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.1);
+  position: relative; /* .container를 기준으로 자식 요소의 절대 위치를 설정 */
 }
-
 /* 제목과 부제목 설정 */
 .header {
   text-align: left;
+  font-size: 20px;
   margin-bottom: 2em;
 }
-.logo {
-  max-width: 150px;
-  margin-bottom: -1em;
-  width: 100px;
-  height: 50px;
-  object-fit: cover;
-}
 .title {
-  font-size: 2em;
+  font-size: 1.8em;
   font-weight: bold;
   margin-bottom: 0.2em;
 }
-.subtitle {
-  font-size: 1.5em;
-  color: #666;
+
+
+/* 커리큘럼 내용 작성 */
+.rectangle {
+  /* Flexbox와 flex-wrap 설정을 통해, 열단위로 배치. */
+  display: flex;        
+  flex-wrap: nowrap; 
+  background: #ffffff;
+  width: 700px;
+  height: 40px;
+  color: #ffffff;
+  white-space: nowrap;
+  flex-wrap: nowrap; 
+}
+/* .rect1, .rect2, .rect3 */
+.rect1, .rect2, .rect3 {
+  display: flex;           /* flexbox 컨테이너로 설정 */
+  flex-direction: row;     /* 가로로 배치 (수평으로 배치됨) */
+  align-items: center;     /* 아이템을 수직 중앙 정렬 */
+}
+.rect1 {
+  background: #0362a2;  /* 파란색 배경 */
+  width: 270px;          /* 너비 */
+}
+.rect2 {
+  background: #a60cb0;  /* 보라색 배경 */
+  width: 250px;          /* 너비 */
+}
+.rect3 {
+  background: #20007e;  /* 어두운 보라색 배경 */
+  width: 180px;          /* 너비 */
 }
 
-/* 소개 부분 스타일 */
-.introduction {
-  margin: 2em 0;
-  text-align: left;
+.rectangle- {
+  /* Flexbox와 flex-wrap 설정을 통해, 열단위로 배치. */
+  display: flex;        
+  flex-wrap: nowrap; 
+  background: #ffffff;
+  width: 700px;
+  height: 260px;
+  color: #ffffff;
+  white-space: nowrap;
+  flex-wrap: nowrap; 
 }
-.introduction p {
-  font-size: 1.2em;
-  color: #555;
+/* PHASE Step */
+.rect1-, .rect2-, .rect3- {
+  height: 260px;    /* 각 사각형의 높이를 설정 */
+}
+.rect1- {
+  background: #ffffff;  /* 파란색 배경 */
+  width: 270px;          /* 너비 */
+}
+.rect2- {
+  background: #ffffff;  /* 파란색 배경 */
+  width: 250px;          /* 너비 */
+}
+.rect3- {
+  background: #ffffff;  /* 파란색 배경 */
+  width: 180px;          /* 너비 */
+}
+/* .size-12 클래스 정의 */
+.size-12 {
+  font-size: 12px;
+}
+/* .clickable 링크 스타일 */
+a.clickable {
+  text-decoration: none; /* 링크의 기본 밑줄 제거 */
+  color: #000000; 
+}
+.text {
+  text-align: center;      /* 가로 중앙 정렬 */
+  height: 55px;    
+  color: #040404; 
+  font-size: 20px;       
 }
 
+
+/* 모바일에서 비율과 너비 조정 */
+@media (max-width: 768px) {
+  .body, .head {
+    width: 70%; 
+    aspect-ratio: 4 / 1; /* 비율 유지 */
+  }
+}
+
+
+/*  */
 /* 메뉴 스타일 */
 .menu {
   display: flex;
@@ -129,133 +139,3 @@ body {
   color: rgb(255, 255, 255);
   transform: translateY(-2px);
 }
-
-/* 푸터 스타일 */
-.footer {
-  text-align: center;
-  margin-top: 2em;
-  font-size: 0.9em;
-  color: #999;
-}
-
-
-.text1 {
-  text-align: center;      /* 가로 중앙 정렬 */
-  height: 55px;    
-  color: #f7f7f7; 
-  font-size: 20px;       
-}
-
-.text1_1 {
-  text-align: center;      /* 가로 중앙 정렬 */
-  height: 55px;    
-  color: #040404; 
-  font-size: 20px;       
-}
-
-
-.rectangle1 {
-  position: absolute;         /* 절대 위치 */
-  top: 180px;                  /* 상위 요소(브라우저) 상단에서 50px 떨어짐 */
-  left: 60px;                 /* 상위 요소(브라우저) 왼쪽에서 20px 떨어짐 */
-
-  width: 300px;               /* 너비 */
-  height: 50px;              /* 높이 */
-  background-color: #0362a2;  /* 배경색 (파란색) */
-  /* border: 2px solid #2980b9;  테두리 색상 */
-}
-
-.rectangle1_1 {
-  position: absolute;         /* 절대 위치 */
-  top: 230px;                  /* 상위 요소(브라우저) 상단에서 50px 떨어짐 */
-  left: 60px;                 /* 상위 요소(브라우저) 왼쪽에서 20px 떨어짐 */
-
-  width: 300px;               /* 너비 */
-  height: 300px;              /* 높이 */
-  background-color: #9ecbe813;  /* 배경색 (파란색) */
-  /* border: 2px solid #2980b9;  테두리 색상 */
-}
-
-.rectangle2 {
-  position: absolute;         /* 절대 위치 */
-  top: 180px;                  /* 상위 요소(브라우저) 상단에서 50px 떨어짐 */
-  left: 380px;                 /* 상위 요소(브라우저) 왼쪽에서 20px 떨어짐 */
-
-  width: 200px;               /* 너비 */
-  height: 50px;              /* 높이 */
-  background-color: #a60cb0;  /* 배경색 (파란색) */
-  /* border: 2px solid #2980b9;  테두리 색상 */
-}
-
-.rectangle2_1 {
-  position: absolute;         /* 절대 위치 */
-  top: 230px;                  /* 상위 요소(브라우저) 상단에서 50px 떨어짐 */
-  left: 380px;                 /* 상위 요소(브라우저) 왼쪽에서 20px 떨어짐 */
-
-  width: 200px;               /* 너비 */
-  height: 300px;              /* 높이 */
-  background-color: #edc8e313;  /* 배경색 (파란색) */
-  /* border: 2px solid #2980b9;  테두리 색상 */
-}
-
-.rectangle3 {
-  position: absolute;         /* 절대 위치 */
-  top: 180px;                  /* 상위 요소(브라우저) 상단에서 50px 떨어짐 */
-  left: 600px;                 /* 상위 요소(브라우저) 왼쪽에서 20px 떨어짐 */
-
-  width: 150px;               /* 너비 */
-  height: 50px;              /* 높이 */
-  background-color: #20007e;  /* 배경색 (파란색) */
-  /* border: 2px solid #2980b9;  테두리 색상 */
-}
-
-.rectangle3_1 {
-  position: absolute;         /* 절대 위치 */
-  top: 230px;                  /* 상위 요소(브라우저) 상단에서 50px 떨어짐 */
-  left: 600px;                 /* 상위 요소(브라우저) 왼쪽에서 20px 떨어짐 */
-
-  width: 150px;               /* 너비 */
-  height: 300px;              /* 높이 */
-  background-color:  #f5f4fa  /* 배경색 (파란색) */
-  /* border: 2px solid #2980b9;  테두리 색상 */
-}
-
-.rectangle_rectangle {
-  position: absolute;         /* 절대 위치 */
-  top: 180px;                  /* 상위 요소(브라우저) 상단에서 50px 떨어짐 */
-  left: 800px;                 /* 상위 요소(브라우저) 왼쪽에서 20px 떨어짐 */
-
-  width: 400px;               /* 너비 */
-  height: 350px;              /* 높이 */
-  background-color:  #c8c5d8  /* 배경색 (파란색) */
-  /* border: 2px solid #2980b9;  테두리 색상 */
-}
-
-.r {
-  position: absolute;         /* 절대 위치 */
-  top: 180px;                  /* 상위 요소(브라우저) 상단에서 50px 떨어짐 */
-  left: 1300px;                 /* 상위 요소(브라우저) 왼쪽에서 20px 떨어짐 */
-
-  width: 10px;               /* 너비 */
-  height: 350px;              /* 높이 */
-  background-color:  #ffffff  /* 배경색 (파란색) */
-  /* border: 2px solid #2980b9;  테두리 색상 */
-}
-
-/* .size-12 클래스 정의 */
-.size-12 {
-  font-size: 12px;
-}
-
-/* .clickable 링크 스타일 */
-a.clickable {
-  text-decoration: none; /* 링크의 기본 밑줄 제거 */
-  color: inherit; /* 부모 색상 상속 */
-}
-
-a.clickable:hover {
-  color: #3498db; /* 호버 시 색상 변경 */
-}
-
-
-
