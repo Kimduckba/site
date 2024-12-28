@@ -1,42 +1,57 @@
 <!DOCTYPE html> <!-- 문서 유형(html) 선언 -->
 <html lang="ko"> <!-- HTML 문서의 언어를 ko: 한글로 설정 -->
+
 <head>
     <meta charset="UTF-8"> <!-- 문자 인코딩 설정 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- 모바일 설정 -->
     <title> 삼정 Future Academy 4기 </title> <!-- 브라우저 탭에 표시될 제목 -->
     <!-- 외부 CSS나 내부 스타일시트는 아래에서 정의 -->
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
-<body>
-    <!-- <div>로 페이지 내용 그룹화 -->
-    <div class="container">
 
-        <!-- 헤더: 제목과 부제목 -->
-        <div class="header">
+<body>
+
+    <!-- 제목을 container로 묶어서 초록색 직사각형 생성후 안에 title 작성. -->
+    <div class="container"> 
+        <div class="header">  <!-- 글씨색은 흰색 -->
             <span class="title">삼정 Future Academy 4기</span>
         </div>
 
-        <!-- 간략한 소개 -->
+        <!-- 제목에 대한 간략한 소개 -->
         <div class="introduction">
-            <p>Recoding...</p>
+            <p> 미래의 business analysis들... </p>
 
-            <div class="rectangle1">
-                <span class="text1">PHASE 1 <br> 훈련과정(정규교과)</span>
-            </div>
+    </div>
 
-            <div class="rectangle2">
-                <span class="text1">PHASE 2 <br> 훈련과정(프로젝트)</span>
-            </div>
+    <div class="rectangle">
+        <span class="rect1"> 
+            &nbsp; PHASE 1 <br>
+            &nbsp; 훈련과정(정규교과)
+        </span>
+        <span class="rect2"> 
+            &nbsp; PHASE 2 <br>
+            &nbsp; 훈련과정(프로젝트)
+        </span>
+        <span class="rect3"> 
+            &nbsp; PHASE 3 <br>
+            &nbsp; 평가
+        </span>
+    </div>
 
-            <div class="rectangle3">
-                <span class="text1">PHASE 3 <br> 평가</span>
-            </div>
-
-            <div class="rectangle1_1">
-                <span class="text1_1"> &nbsp; step1 </span>
+    <div class="rectangle-">
+        <span class="rect1-"> 
+            <span class="text"> &nbsp; step1 </span><br>
+            <a href="PHASE1/BAI_ITII.html" class="clickable">
+                <span class="size-12"> &nbsp;&nbsp;&nbsp;&nbsp; - BusinessAI 개론 및 IT 산업 혁신</span>
+            </a>
+            <br>
+                <a href="비즈니스 애널리틱스 1.html" class="clickable">
+                    <span class="size-12">&nbsp;&nbsp;&nbsp;&nbsp; - 비즈니스 애널리틱스1 </span>
+                </a>
                 <br>
-                <a href="PHASE1/BAI_ITII.html" class="clickable">
-                    <span class="size-12">&nbsp;&nbsp;&nbsp;&nbsp; - BusinessAI 개론 및 IT 산업 혁신</span>
+                <a href="기초 통계 및 경영 통계.html" class="clickable">
+                    <span class="size-12">&nbsp;&nbsp;&nbsp;&nbsp; - 기초 통계 및 경영 통계 </span>
                 </a>
                 <br>
                 <a href="프로젝트 기획 및 관리.html" class="clickable">
@@ -51,17 +66,8 @@
                     <span class="size-12">&nbsp;&nbsp;&nbsp;&nbsp; - 디지털 이노베이션 및 빅테크 AI Business 전략 </span>
                 </a>
                 <br>
-                <a href="기초 통계 및 경영 통계.html" class="clickable">
-                    <span class="size-12">&nbsp;&nbsp;&nbsp;&nbsp; - 기초 통계 및 경영 통계 </span>
-                </a>
                 <br>
-                <a href="비즈니스 애널리틱스 1.html" class="clickable">
-                    <span class="size-12">&nbsp;&nbsp;&nbsp;&nbsp; - 비즈니스 애널리틱스1 </span>
-                </a>
-                <br>
-                <br>
-                <span class="text1_1"> &nbsp;&nbsp;step2 </span>
-                <br>
+                <span class="text"> &nbsp; step2 </span><br>
                 <a href="기초 통계 및 경영 통계.html" class="clickable">
                     <span class="size-12"> &nbsp;&nbsp;&nbsp;&nbsp;- 비즈니스 애널리틱스2 </span>
                 </a>
@@ -71,22 +77,19 @@
                 </a>
                 <br>
                 <br>
-                <span class="text1_1"> &nbsp;&nbsp;step3 </span>
-                <br>
+                <span class="text"> &nbsp; step3 </span><br>
                 <a href="기초 통계 및 경영 통계.html" class="clickable">
                     <span class="size-12"> &nbsp;&nbsp;&nbsp;&nbsp;- 인공지능 문제해결 전략2 </span>
                 </a>
                 <br>
-            </div>
-
-            <div class="rectangle2_1">
-                <span class="text1_1"> </span>
-                <a href="Project1.html" class="clickable">
-                    <span class="size-12"> &nbsp;&nbsp; [Project 1] 기획/설계 <br>
-                        &nbsp;&nbsp; AI를 활용한 서비스 기획/설계
-                    </span>
-                </a>
-                <br><br><br>
+        </span>
+        <span class="rect2-">
+            <a href="Project1.html" class="clickable">
+                <span class="size-12"> &nbsp;&nbsp; [Project 1] 기획/설계 <br>
+                    &nbsp;&nbsp; AI를 활용한 서비스 기획/설계
+                </span>
+            </a>
+            <br><br><br>
                 <a href="Project2.html" class="clickable">
                     <span class="size-12"> &nbsp;&nbsp; [Project 2] Prototype 개발<br>
                         &nbsp;&nbsp; 미니 프로젝트 예측 및 분석
@@ -99,42 +102,27 @@
                     </span>
                 </a>                
                 <br>
-            </div>
-
-            <div class="rectangle3_1">
-                <span class="text1_1"> </span>
+        </span>
+        <span class="rect3-">
+            <span class="text"> </span>
                 <a href="Project1.html" class="clickable">
                     <span class="size-12"> &nbsp;&nbsp; Project 경진대회<br>
                     </span>
                 </a>
-
-            </div>
-        </div>
-
-        <div class ="rectangle_rectangle"> 
-            <span class="text1">  Business Analytics란...  <br>  무엇일까? </span>
-        </div>
-
-        <div class ="r"> 
-            
-        </div>
-
-
-        <!-- 네비게이션 메뉴 -->
-        
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <div class="menu">
-            <div class="menu-item"><a href="python/Python.html"><button>Python</button></a></div>
-            <div class="menu-item"><a href="WR/WR_WeekX.html"><button> 주간회고 </button></a></div>
-            <div class="menu-item"><a href="2.html"><button> 월간회고 </button></a></div>
-            <div class="menu-item"><a href="3.html"><button> Project </button></a></div>
-            <div class="menu-item"><a href="4.html"><button> 맛집 List </button></a></div>
-        </div>
-
-        <!-- 푸터 -->
-        <div class="footer">
-            &copy; 2025 MFDA! | <a href="contact.html">Contact Us</a> | <a href="privacy.html">Privacy Policy</a>
-        </div>
+        </span>
     </div>
+
+    <!-- 주간회고 -->
+    <!-- 네비게이션 메뉴 -->
+        
+    <br><br><br><br><br><br><br>
+    <div class="menu">
+        <div class="menu-item"><a href="python/Python.html"><button>Python</button></a></div>
+        <div class="menu-item"><a href="1.html"><button> 주간회고 </button></a></div>
+        <div class="menu-item"><a href="2.html"><button> 월간회고 </button></a></div>
+        <div class="menu-item"><a href="3.html"><button> Project </button></a></div>
+        <div class="menu-item"><a href="4.html"><button> 맛집 List </button></a></div>
+    </div>
+    <!-- 현재 브라우저 크기: 1200px x 300px -->
+
 </body>
-</html>
